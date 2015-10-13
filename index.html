@@ -4,11 +4,46 @@
     <meta charset="UTF-8">
     <title>Donuts Nodey API</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/donutsController.js"></script>
 </head>
 <body>
-    {{ 1 + 1 }}
+
+    <section ng-controller="DonutsController as donuts">
+      
+      <h1>"Donut make me get oldskool"</h1>
+
+      <ul id="donuts">
+        <li ng-repeat="donut in donuts.all">
+          <strong>{{donut.style}}</strong> 
+          <br>
+          <em>{{donut.flavor}}<em>
+        </li>
+      </ul>
+
+      <form class="add-donut" ng-submit='donuts.addDonut()'>
+        <div>
+          <label for="new-donut-style">Donut Style</label>
+          <input type="text" id="new-donut-style" placeholder="STYLE" ng-model='donuts.newDonut.style'>
+        </div>
+
+        <div>
+          <label for="new-donut-flavour">Donut Flavour</label>
+          <input type="text" id="new-donut-flavor" placeholder="FLAVOUR" ng-model='donuts.newDonut.flavor'>
+        </div>
+
+        <div>
+          <input type="submit" value="Add donut">
+        </div>
+
+      </form>
+
+    </section>
+
+  <footer>Copyright Luke Haines Fo'sho</footer>
+
+
 </body>
 </html>

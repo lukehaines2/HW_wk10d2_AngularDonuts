@@ -1,0 +1,30 @@
+body {
+    background-color: hotpink;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+
+h1 {
+    color: red;
+    font-size: 38px;
+    text-align: center; 
+}
+
+.add-donut {
+    text-align: center;
+    border: 1px solid red;
+    margin-left: 25%;
+    width: 50%;
+}
+
+#donuts {
+    font-size: 16px;
+    margin-left: 45%;
+    width: 25%;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+}
+
