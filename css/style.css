@@ -35,12 +35,14 @@ h1:after {
 
 footer {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 20px;
+    vertical-align: middle;
+    padding-bottom: 30px;
 }
 
 li {
     display: inline-block;
-    /*padding: 25px 25px 25px 25px;*/
+    padding: 8px 28px 8px 8px;
 }
 
 .del-button {
@@ -52,10 +54,9 @@ li {
 }
 
 .list {
-    /*border: 1px solid red;*/
+    padding-left: 2px;
+    text-align: left;
     display: inline-block;
-    padding-left: 4px;
-    text-align: middle;
     vertical-align: middle;
 }
 
@@ -71,6 +72,5 @@ li {
   width: 65%;
   height: 75%;
   margin: 0 auto;
-  background-color: rgba(68, 68, 68, 0.7);
-  height: 
+  background-color: rgba(68, 68, 68, 0.87);
 }
