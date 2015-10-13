@@ -28,17 +28,21 @@ function DonutsController($http){
   
     self.newDonut = {};
   }
-}
+
+  self.delete = deleteDonut;
+  var deleteId;
 
   function deleteDonut(id) {
+    deleteId = id 
     $http
-    .delete('http://api.doughnuts.ga/doughnuts' + id)
-    .then(function(response) {
-      self.all = response.data;
-      console.log(response)
-      console.log(response.data)
+    .delete('http://api.doughnuts.ga/doughnuts/' + id)
+    .then(function() {
+      self.all.splice(deleteId, 1)
     })
+    self.newDonut = {};
   }
+}
 // put(url, data, [config]);
+  
 // patch(url, data, [config]);
 
